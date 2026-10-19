@@ -34,7 +34,7 @@ fn App() -> Element {
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         document::Link { rel:"preconnect", href:"https://fonts.googleapis.com" }
         document::Link { rel:"preconnect", href:"https://fonts.gstatic.com" }
-        document::Link { rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" }
+        document::Link { rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" }
         Router::<Route> {}
     }
 }
@@ -121,7 +121,6 @@ fn SideBarItem(name: String, slim_name: String, route: String, is_open: Signal<b
             text_decoration: "none",
             padding: "10px 12px",
             background_color: "var(--color-bg)",
-            border_radius: "4px",
             border: "1px solid var(--color-border)",
             if is_open() {"{name}"} else {"{slim_name}"}
         }
