@@ -14,6 +14,15 @@
   gap: 10px;
 }
 
+.main_horizontal {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 10px;
+  color: #f3f4f6;
+}
+
 .top_card {
   display: flex;
   flex-direction: row;
@@ -62,21 +71,10 @@
   font-size: 14px;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: column;
-  color: var(--color-text);
-  align-items: center;
-  min-height: 100vh;
-  border-right: 1px solid black;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-}
-
 body {
   font-family: "Share Tech Mono", monospace;
   min-height: 100vh;
-  background: var(--color-bg);
+  background: #000000;
   margin: 0;
 }
 
